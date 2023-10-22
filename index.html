@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steam Screenshot Faker</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Steam Screenshot Faker</h1>
+
+      <main>
+        <div>
+          <label for="upload-input">Photo you want to fake:</label>
+          <input id="upload-input" type="file" />
+        </div>
+
+        <div>
+          <span>Happy with results?</span>
+          <button id="download-button">Download screenshots</button>
+          <span>(two files, full size and thumbnail)</span>
+        </div>
+
+        <div id="canvas-wrapper">
+          <canvas id="canvas-full" width="1920" height="1080" data-version="Full"></canvas>
+          <canvas id="canvas-thumbnail" width="200" height="112" data-version="Thumbnail"></canvas>
+        </div>
+      </main>
+
+      <aside>
+        <h2>Why would I need it?</h2>
+        <p>
+          In certain video games, such as Cyberpunk 2077, the 'Photo Mode' feature stores its captured images in a
+          distinct directory, resulting in Steam failing to recognize them as conventional screenshots. If you, like me,
+          find the desire to share these images as regular screenshots rather than classifying them as artworks or the
+          like, then this tool is designed to streamline this process for you, providing a more convenient solution.
+        </p>
+      </aside>
+    </div>
+  </body>
+</html>
